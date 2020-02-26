@@ -17,7 +17,11 @@
 
 #import <React/RCTBridge.h>
 #import <React/RCTConvert.h>
+#if __has_include(<React/RCTImageLoader.h>)
+#import <React/RCTImageLoader.h>
+#else
 #import <React/RCTImageLoaderProtocol.h>
+#endif
 #import <React/RCTLog.h>
 #import <React/RCTUtils.h>
 
